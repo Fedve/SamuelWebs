@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (form) {
             form.innerHTML = `
                 <center> 
-                    <p style="color: #f8f8f8; text-align: center; font-weight: bold; padding: 10px;">Terima kasih! Kamu sudah mengirimkan catatan dan lagu sebelumnya.</p> 
+                    <p style="color: #f8f8f8; text-align: center; font-weight: bold; padding: 10px;">Thank you! You have already sent the notes and the song.</p> 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="width: 32px; height: 32px; color: #f8f8f8;">
                       <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z" clip-rule="evenodd" />
                     </svg> 
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
                 
                 localStorage.setItem("note_sent_time", new Date().getTime().toString());
-                form.innerHTML = `<p style="color: #ffffff; text-align: center; font-weight: bold; padding: 10px;">Terima kasih! Catatan dan lagu Spotify mu berhasil dikirim.</p>`;
+                form.innerHTML = `<p style="color: #ffffff; text-align: center; font-weight: bold; padding: 10px;">Thank you! Your note and Spotify song have been successfully sent.</p>`;
             } catch (error) {
                 console.error("Gagal mengirim data: ", error);
             }
