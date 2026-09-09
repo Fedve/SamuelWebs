@@ -17,7 +17,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     color: white;
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 0.6px black;
     font-weight: bold;
     text-shadow: -1px 1px 9px rgba(255, 255, 255, 0.6);
     overflow-x: hidden; 
@@ -149,12 +149,14 @@ body {
     font-weight: bold;
     font-size: clamp(26px, 5vw, 35px);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .mini-title2 {
     font-weight: bold;
     font-size: clamp(20px, 4vw, 25px);
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .desc-text {
